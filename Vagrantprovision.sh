@@ -762,6 +762,9 @@ if [ ${SETUP_BASH} = 1 ]; then
 
 		echo Adds artisan alias
 		echo $'\n# artisan command alias\nalias artisan="php artisan"' | tee -a /home/vagrant/.profile > /dev/null
+
+		echo Adds phpunit alias
+		echo $'\n# phpunit command alias\nalias phpunit="php vendor/phpunit/phpunit/phpunit"' | tee -a /home/vagrant/.profile > /dev/null
 	fi
 
 	if [ ${SETUP_SUPERVISOR} = 1 ]; then
